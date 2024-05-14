@@ -18,10 +18,10 @@
     class Header {
         constructor() {
             this.color = "Red";
-    }
+        }
 
-    // With arrow functions there is no binding. This function is "anonymous", doesn't belong to the object
-    changeColor = () => {
+        // With arrow functions there is no binding. This function is "anonymous", doesn't belong to the object
+        changeColor = () => {
             document.getElementById("demo").innerHTML += this;
             console.log(demo.innerHTML);
         }
