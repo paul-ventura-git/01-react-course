@@ -4,10 +4,11 @@ import Football from './components/Football';
 import Garage from './components/Garage'
 import Goal from './components/Goal'
 import Kitchen from './components/Kitchen';
+import Garden from './components/Garden'
+import Library from './components/Library';
 
 function App() {
   const my_cookware = ['Cutting board','Can opener','Measuring spoons'];
-  console.log(my_cookware.length);
   return (
     <div className="App">
       <h1>Hello World!</h1>
@@ -17,6 +18,8 @@ function App() {
       <Baseball></Baseball>
       <Goal isGoal="false"></Goal>
       <Kitchen cookware={my_cookware}></Kitchen>
+      <Garden trees={false}></Garden>
+      <Library></Library>
     </div>
   );
 }
