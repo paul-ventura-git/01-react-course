@@ -6,6 +6,8 @@ import Goal from './components/Goal'
 import Kitchen from './components/Kitchen';
 import Garden from './components/Garden'
 import Library from './components/Library';
+import MyForm from './components/MyForm';
+import MyFormManyFields from './components/MyFormManyFields';
 
 function App() {
   const my_cookware = ['Cutting board','Can opener','Measuring spoons'];
@@ -20,6 +22,8 @@ function App() {
       <Kitchen cookware={my_cookware}></Kitchen>
       <Garden trees={false}></Garden>
       <Library></Library>
+      <MyForm></MyForm>
+      <MyFormManyFields></MyFormManyFields>
     </div>
   );
 }
