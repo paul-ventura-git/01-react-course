@@ -66,11 +66,11 @@ function App() {
       <Counter></Counter>
 
       <h2 style={{backgroundColor:'plum'}}>11. useEffect: api calling</h2>
-      {/*<ShowData></ShowData>*/}
+      <ShowData></ShowData>
       <ShowDataCharacters></ShowDataCharacters>
 
       <h2 style={{backgroundColor:'plum'}}>12. Rendering API data</h2>
-      {/*<ShowDataInTable></ShowDataInTable>*/}
+      <ShowDataInTable></ShowDataInTable>
       <ShowDataInCards></ShowDataInCards>
 
       <BrowserRouter>
