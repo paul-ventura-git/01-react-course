@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import ReactDOM from "react-dom/client";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
