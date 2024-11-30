@@ -10,6 +10,12 @@ import MyForm from './components/MyForm';
 import MyFormManyFields from './components/MyFormManyFields';
 import MyFormTextArea from './components/MyFormTextArea';
 import MyFormSelect from './components/MyFormSelect';
+import Timer from './components/Timer';
+import Counter from './components/Counter.jsx';
+import ShowData from './components/ShowData';
+import ShowDataCharacters from './components/ShowDataCharacters';
+import ShowDataInCards from './components/ShowDataInCards.jsx'
+import ShowDataInTable from './components/ShowDataInTable';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./pages/Layout";
@@ -53,6 +59,20 @@ function App() {
       <MyFormSelect></MyFormSelect>
       <MyFormTextArea></MyFormTextArea>
       
+      <h2 style={{backgroundColor:'plum'}}>9. useEffect: on initial render</h2>
+      <Timer></Timer>
+
+      <h2 style={{backgroundColor:'plum'}}>10. useEffect: dependent on a variable</h2>
+      <Counter></Counter>
+
+      <h2 style={{backgroundColor:'plum'}}>11. useEffect: api calling</h2>
+      {/*<ShowData></ShowData>*/}
+      <ShowDataCharacters></ShowDataCharacters>
+
+      <h2 style={{backgroundColor:'plum'}}>12. Rendering API data</h2>
+      {/*<ShowDataInTable></ShowDataInTable>*/}
+      <ShowDataInCards></ShowDataInCards>
+
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
