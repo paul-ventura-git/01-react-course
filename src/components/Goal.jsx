@@ -4,14 +4,14 @@ function Goal(props) {
         return <MadeGoal/>;
     }
         return <MissedGoal/>;
-    }
+}
 
-    function MissedGoal() {
-        return <h1>The value of props is TRUE!</h1>;
-    }
+function MadeGoal() {
+    return <h3>The value of props is TRUE!</h3>;
+}
 
-    function MadeGoal() {
-        return <h1>The value of props is FALSE!</h1>;
-    }
+function MissedGoal() {
+    return <h3>The value of props is FALSE!</h3>;
+}
 
 export default Goal

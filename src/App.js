@@ -19,22 +19,40 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 
 function App() {
-  const my_cookware = ['Cutting board','Can opener','Measuring spoons'];
+  const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fork'];
+  //const my_cookware2 = [];
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <Car my_xyz_property="red"></Car>
-      <Garage sizeOfGarage="big"></Garage>
+      <h1>React course summary</h1>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>1. Props</h2>
+      <Car carColor="green" brand="Lamborghini"></Car>
+      <Garage sizeOfGarage="small"></Garage>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>2. Props with events</h2>
       <Football></Football>
       <Baseball></Baseball>
-      <Goal isGoal="false"></Goal>
-      <Kitchen cookware={my_cookware}></Kitchen>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>3. Props with booleans</h2>
+      <Goal isGoal={false}></Goal>   
       <Garden trees={false}></Garden>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>4. Props with arrays</h2>   
+      <Kitchen cookware={my_cookware}></Kitchen>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>5. Props with "Javascript objects"</h2> 
       <Library></Library>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>6. useState</h2>
       <MyForm></MyForm>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>7. useState with "Javascript objects"</h2>
       <MyFormManyFields></MyFormManyFields>
-      <MyFormTextArea></MyFormTextArea>
+
+      <h2 style={{backgroundColor:'lightBlue'}}>8. useState with other form elements</h2>
       <MyFormSelect></MyFormSelect>
+      <MyFormTextArea></MyFormTextArea>
+      
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>

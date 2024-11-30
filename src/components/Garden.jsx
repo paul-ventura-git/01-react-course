@@ -3,18 +3,19 @@ import React from 'react'
 function Garden(props) {
   const trees = props.trees;
   return (
-    <div>Garden
+    <div> 
+      <h3>Garden</h3>
       { trees ? <BigGarden /> : <SmallGarden />}
     </div>
   )
 }
 
 function BigGarden() {
-  return <h1>This garden contains trees!</h1>;
+  return <p>This garden contains trees! TRUEEEEEEEE</p>;
 }
 
 function SmallGarden() {
-  return <h1>This garden doesn't contain trees!</h1>;
+  return <p>This garden doesn't contain trees! FALSEEEEEE</p>;
 }
 
 export default Garden

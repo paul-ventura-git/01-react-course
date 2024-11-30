@@ -6,4 +6,4 @@ const message = () => {
     return name + ' is ' + age + 'years old.';
   };
   
-  export default message;
+export default message;

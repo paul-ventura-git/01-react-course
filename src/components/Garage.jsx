@@ -7,8 +7,7 @@ function Garage(props) {
 
     return (
         <div>Who lives in my {props.sizeOfGarage} garage?
-            <Car brand={ carBrand }>::Car One::</Car>
-            
+            <Car brand={ carBrand }>::Car One::</Car>            
         </div>
     )
 }

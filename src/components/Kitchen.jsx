@@ -4,12 +4,12 @@ function Kitchen(props) {
     const cookware = props.cookware;
     return (
         <div>
-            <h1>Kitchen</h1>
+            <h3>Kitchen</h3>
             {
                 cookware.length > 0 &&
-                <h2>
+                <h4>
                     You Have { cookware.length } utensils in your kitchen.
-                </h2>
+                </h4>
             }
         </div>
     )

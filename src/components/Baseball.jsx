@@ -2,7 +2,8 @@ import React from 'react';
 
 function Baseball() {
   const shoot = (a, b) => {
-    alert(b.type);
+
+    alert(a.type + b.type);
 		/*
 		'b' represents the React event that triggered the function.
     In this case, the 'click' event
@@ -10,7 +11,7 @@ function Baseball() {
   }
 
   return (
-    <button onClick={(event) => shoot("Home run!", event)}>Take the shot!</button>
+    <button onClick={(event) => shoot("Home run!", event)}>Baseball button!</button>
   );
 }
 
