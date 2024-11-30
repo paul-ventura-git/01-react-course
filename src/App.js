@@ -49,7 +49,7 @@ function App() {
       <h2 style={{backgroundColor:'lightBlue'}}>7. useState with "Javascript objects"</h2>
       <MyFormManyFields></MyFormManyFields>
 
-      <h2 style={{backgroundColor:'lightBlue'}}>8. useState with other form elements</h2>
+      <h2 style={{backgroundColor:'lightBlue'}}>8. useState with other form elements...</h2>
       <MyFormSelect></MyFormSelect>
       <MyFormTextArea></MyFormTextArea>
       
