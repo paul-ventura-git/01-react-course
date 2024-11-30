@@ -17,19 +17,12 @@ import ShowDataCharacters from './components/ShowDataCharacters';
 import ShowDataInCards from './components/ShowDataInCards.jsx'
 import ShowDataInTable from './components/ShowDataInTable';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
-import NoPage from "./pages/NoPage";
-
 function App() {
   const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fork'];
   //const my_cookware2 = [];
   return (
     <div className="App">
-      <h1>React course summary</h1>
+      <h1>React course summary (Essentials)</h1>
 
       <h2 style={{backgroundColor:'lightBlue'}}>1. Props</h2>
       <Car carColor="green" brand="Lamborghini"></Car>
@@ -73,16 +66,6 @@ function App() {
       <ShowDataInTable></ShowDataInTable>
       <ShowDataInCards></ShowDataInCards>
 
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
     </div>
   );
 }
