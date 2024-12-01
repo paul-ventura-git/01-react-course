@@ -9,5 +9,5 @@ export default function Timer() {
     }, 1000);    
   }, []); // <- add empty brackets here
 
-  return <h1>I've rendered {count} times!</h1>;
+  return <h1>I've rendered {count} times!(because of the strict mode)</h1>;
 }
