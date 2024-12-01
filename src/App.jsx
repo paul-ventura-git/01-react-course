@@ -1,28 +1,28 @@
-import Baseball from './components/Baseball';
-import Car from './components/Car'
-import Football from './components/Football';
-import Garage from './components/Garage'
-import Goal from './components/Goal'
-import Kitchen from './components/Kitchen';
-import Garden from './components/Garden'
-import Library from './components/Library';
-import MyForm from './components/MyForm';
-import MyFormManyFields from './components/MyFormManyFields';
-import MyFormTextArea from './components/MyFormTextArea';
-import MyFormSelect from './components/MyFormSelect';
-import Timer from './components/Timer';
+import Baseball from './components/Baseball.jsx';
+import Car from './components/Car.jsx'
+import Football from './components/Football.jsx';
+import Garage from './components/Garage.jsx'
+import Goal from './components/Goal.jsx'
+import Kitchen from './components/Kitchen.jsx';
+import Garden from './components/Garden.jsx'
+import Library from './components/Library.jsx';
+import MyForm from './components/MyForm.jsx';
+import MyFormManyFields from './components/MyFormManyFields.jsx';
+import MyFormTextArea from './components/MyFormTextArea.jsx';
+import MyFormSelect from './components/MyFormSelect.jsx';
+import Timer from './components/Timer.jsx';
 import Counter from './components/Counter.jsx';
-import ShowData from './components/ShowData';
-import ShowDataCharacters from './components/ShowDataCharacters';
+import ShowData from './components/ShowData.jsx';
+import ShowDataCharacters from './components/ShowDataCharacters.jsx';
 import ShowDataInCards from './components/ShowDataInCards.jsx'
-import ShowDataInTable from './components/ShowDataInTable';
+import ShowDataInTable from './components/ShowDataInTable.jsx';
 
 function App() {
   const my_cookware = ['Cutting board','Can opener','Measuring spoons', 'Fork'];
   //const my_cookware2 = [];
   return (
-    <div className="App">
-      <h1>React course summary (Essentials)</h1>
+    <div className="App container">
+      <h1 style={{textAlign:"center"}}>React course summary (Essentials)</h1>
 
       <h2 style={{backgroundColor:'lightBlue'}}>1. Props</h2>
       <Car carColor="green" brand="Lamborghini"></Car>
